@@ -17,6 +17,9 @@
 			html {overscroll-behavior: contain;touch-action:pan-down}
 			body {text-align:center;overflow-x: hidden;margin: 5px 1px 0 1px;font-size:33px;color:#212121;padding:0 !important;overscroll-behavior: contain;}
 		</style>
+		<script>
+			if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(function(reg){}).catch(function(err){});alert();}
+		</script>
   	</head>  	
   	<body>
     		<div id='r_container'>
@@ -24,6 +27,4 @@
 		</div>
 	</body>
 </html>
-<script>
-	if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(function(reg){}).catch(function(err){});}
-</script>
+
