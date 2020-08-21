@@ -1,11 +1,11 @@
 {
-	"short_name": 		  "r3App",
-	"name": 			      "r3App",
-	"background_color": "#000000",
-	"theme_color":		  "#000000",
-	"display": 			    "standalone",
-	"orientation": 		  "portrait",
-	"start_url": 		    "/",
+	"short_name": 		"r3app",
+	"name": 		"raApp",
+	"background_color": 	"#000000",
+	"theme_color":		"#000000",
+	"display": 		"standalone",
+	"orientation": 		"portrait",
+	"start_url": 		"/",
 	"icons": [
 		{
 			"src": "../res/logo.png",
