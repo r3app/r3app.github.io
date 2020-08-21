@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# 2020-01-01:v001.000.000
+index.html
+CACHE:
+favicon.png
+../res/logo.png
+../res/mipmap-xxxhdpi/logo.png
+../res/mipmap-xxhdpi/logo.png
+../res/mipmap-xhdpi/logo.png
+../res/mipmap-hdpi/logo.png
+../res/mipmap-mdpi/logo.png
+sw.js
+manifest.json
