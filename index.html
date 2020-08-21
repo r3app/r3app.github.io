@@ -1,1 +1,29 @@
-r3app going live soon...
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+  	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible'>
+		<meta name="viewport" content='width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1'>
+		<title>r3App</title>
+		<meta name='description' content="r3App">
+		<meta name='author' content='r3App'>		
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='mobile-web-app-capable' content='yes'>
+	  <link rel='shortcut icon' href='favicon.png' type='image/png'>
+		<link rel='manifest' href='manifest.json'>  
+		<style>
+			@media screen and (max-width: 430px) {#r_container {width: 100%; text-align:center;margin: 0 auto;}}
+	 		@media screen and (min-width: 431px) {#r_container {width: 430px; text-align:center;margin: 0 auto;}}
+			html {overscroll-behavior: contain;touch-action:pan-down}
+			body {text-align:center;overflow-x: hidden;margin: 5px 1px 0 1px;font-size:33px;color:#212121;padding:0 !important;overscroll-behavior: contain;}
+		</style>
+  	</head>  	
+  	<body>
+    		<div id='r_container'>
+			    <iframe src="https://script.google.com/macros/s/AKfycbxYbbdO7Kh_hgtC0V9wO5RxwONRm_d6nePGinuNYRmEQ2OgikE/exec" style="height:100vh;width:100%">
+		    </div>
+	  </body>
+</html>
+<script>
+	if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').then(function(reg){}).catch(function(err){});}
+</script>
