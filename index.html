@@ -24,18 +24,26 @@
 		</script>
   	</head>  	
   	<body>
-    		<div id='r_container'>
-			<!--
-				<iframe src="https://script.google.com/macros/s/AKfycbxYbbdO7Kh_hgtC0V9wO5RxwONRm_d6nePGinuNYRmEQ2OgikE/exec" style="border:none;height:100vh;width:100%">
-			-->
-			<img src="../res/logo.png" width="128" height="128" style="border-radius:50%;">
-			<p style="font-family:'Open Sans';font-size:25px;font-weight:500;color:purple;padding:0;margin:5px;">a collection of concept webapps</p>
-			<div style="clear:both;padding-top:10px;">
-				<img src="../res/ind.png" width="80" height="80" style="float:left;padding:5px;">
-				<p style="margin:0;text-align:left;font-family:'Open Sans';font-size:23px;font-weight:500;color:blue;">India Summary:</p>
-				<p style="padding-right:5px;margin:0;text-align:left;font-family:'Open Sans';font-size:15px;font-weight:500;color:#212121;">A concept to build a single webapp for information dissemination covering topics ranging pan India to individual villages.</p>
+		<div id='r_container'>			
+			<iframe id='ga_app' src="" style="border:none;height:100vh;width:100%"></iframe>
+			<div id='gh_app'>
+				<img src="../res/logo.png" width="128" height="128" style="border-radius:50%;">
+				<p style="font-family:'Open Sans';font-size:25px;font-weight:500;color:purple;padding:0;margin:5px;">a collection of concept webapps</p>
+				<div style="clear:both;padding-top:10px;">
+					<img src="../res/ind.png" width="80" height="80" style="float:left;padding:5px;" onclick="loadapp('https://script.google.com/macros/s/AKfycbxYbbdO7Kh_hgtC0V9wO5RxwONRm_d6nePGinuNYRmEQ2OgikE/exec');">
+					<p style="margin:0;text-align:left;font-family:'Open Sans';font-size:23px;font-weight:500;color:blue;">India Dataprints 2011</p>
+					<p style="padding-right:5px;margin:0;text-align:left;font-family:'Open Sans';font-size:15px;font-weight:500;color:#212121;">Webapp to study Indian census data 2011</p>
+				</div>
 			</div>
 		</div>
 	</body>
 </html>
+<script>
+	document.getElementById("ga_app").style.display = "none";
+	function loadapp(url){
+		document.getElementById("gh_app").style.display = "none";
+		document.getElementById("ga_app").src = url;
+		document.getElementById("ga_app").style.display = "block";
+	}
+</script>
 
